@@ -5,11 +5,12 @@ package:
   version: {{ version }}
 
 source:
-  git_url: https://github.com/harlowja/fasteners.git
-  git_tag: {{ version }}
+  fn: fasteners-v{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/f/fasteners/fasteners-{{ version }}.tar.gz
+  md5: fcb13261c9b0039d9b1c4feb9bc75e04
 
 build:
-  number: 1
+  number: 2
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
