@@ -34,7 +34,8 @@ test:
 
 about:
   home: https://github.com/harlowja/fasteners
-  license: Apache Version 2.0
+  license: Apache 2.0
+  license_file: LICENSE
   summary: A python package that provides useful locks.
 
 extra:
