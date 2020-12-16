@@ -1,6 +1,6 @@
 {% set name = "fasteners" %}
-{% set version = "0.14.1" %}
-{% set md5 = "fcb13261c9b0039d9b1c4feb9bc75e04" %}
+{% set version = "0.16" %}
+{% set md5 = "35f400771864c68145fb3a0b47ec99db" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 3
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
