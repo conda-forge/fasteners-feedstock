@@ -1,6 +1,6 @@
 {% set name = "fasteners" %}
-{% set version = "0.14.1" %}
-{% set md5 = "fcb13261c9b0039d9b1c4feb9bc75e04" %}
+{% set version = "0.16" %}
+{% set md5 = "35f400771864c68145fb3a0b47ec99db" %}
 
 package:
   name: {{ name|lower }}
@@ -13,19 +13,19 @@ source:
 
 build:
   noarch: python
-  number: 3
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
     - six
     - monotonic >=0.1
 
   run:
-    - python
+    - python >=3.6
     - six
     - monotonic >=0.1
 
@@ -36,10 +36,11 @@ test:
 
 about:
   home: https://github.com/harlowja/fasteners
-  license: Apache 2.0
+  license: Apache-2.0
   license_file: LICENSE
   summary: A python package that provides useful locks.
 
 extra:
   recipe-maintainers:
     - alimanfoo
+    - cmutel
