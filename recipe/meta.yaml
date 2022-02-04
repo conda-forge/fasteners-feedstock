@@ -1,6 +1,6 @@
 {% set name = "fasteners" %}
-{% set version = "0.17.1" %}
-{% set sha256 = "444d46246ecd69addf9d3edb4053f46fb3badf5ea72c40d464ab8f4cdb692dd5" %}
+{% set version = "0.17.2" %}
+{% set sha256 = "2aceacb2bd618ce8526676f7a3e84ea25d0165ef10abb574a45b4a9c07292d2e" %}
 
 package:
   name: {{ name|lower }}
