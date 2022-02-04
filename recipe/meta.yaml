@@ -18,16 +18,10 @@ build:
 
 requirements:
   host:
-    - pip
     - python >=3.6
-    - setuptools
-    - six
-    - monotonic >=0.1
-
+    - pip
   run:
     - python >=3.6
-    - six
-    - monotonic >=0.1
 
 test:
   imports:
