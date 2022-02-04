@@ -26,7 +26,6 @@ requirements:
 test:
   imports:
     - fasteners
-    - fasteners.tests
 
 about:
   home: https://github.com/harlowja/fasteners
