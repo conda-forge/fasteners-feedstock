@@ -1,38 +1,30 @@
 {% set name = "fasteners" %}
 {% set version = "0.17.2" %}
-{% set md5 = "b01609ddea36c33cccf64299bdeb83d8" %}
+{% set sha256 = "2aceacb2bd618ce8526676f7a3e84ea25d0165ef10abb574a45b4a9c07292d2e" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  md5: {{ md5 }}
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - pip
     - python >=3.6
-    - setuptools
-    - six
-    - monotonic >=0.1
-
+    - pip
   run:
     - python >=3.6
-    - six
-    - monotonic >=0.1
 
 test:
   imports:
     - fasteners
-    - fasteners.tests
 
 about:
   home: https://github.com/harlowja/fasteners
@@ -44,3 +36,4 @@ extra:
   recipe-maintainers:
     - alimanfoo
     - cmutel
+    - jakirkham
