@@ -118,4 +118,5 @@ Feedstock Maintainers
 
 * [@alimanfoo](https://github.com/alimanfoo/)
 * [@cmutel](https://github.com/cmutel/)
+* [@jakirkham](https://github.com/jakirkham/)
 
